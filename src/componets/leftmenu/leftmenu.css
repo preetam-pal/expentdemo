@@ -1,0 +1,67 @@
+@import url(../../App.css);
+
+.flow-menu {
+    background: #265867;
+    width: 88px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.flow-menu::before {
+    content: '';
+    background-image: url('../../images/menu-dots.svg');
+    height: 22px;
+    width: 24px;
+    position: absolute;
+    top: -23px;
+    left: 42px;
+    cursor: pointer;
+}
+
+.flow-box ul {
+    margin: 0;
+    padding: 0px;
+}
+
+.flow-menu li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 148%;
+}
+
+.flow-menu li a {
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+} 
+
+.flow-menu span.icon {
+    display: block;
+}
+
+@media only screen and (max-width: 580px) {
+    .flow-menu {
+        width: 100%;
+        top: 60px;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    .flow-menu::before {
+        left: 47%
+    }
+
+    .flow-menu li {
+        width: auto;
+        margin: 10px 6px;
+    }    
+}

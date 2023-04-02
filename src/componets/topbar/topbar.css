@@ -1,0 +1,97 @@
+@import url(../../App.css);
+
+body {
+    background-color: #003B4C;
+    text-align: center;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #265867;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+    color: var(--white);
+}
+
+.arrow {
+    border-right: 1px solid var(--tranparent);
+    padding: 5px 18px 5px 0;
+    margin-right: 22px;
+    font-size: 14px;
+    display: inline-block;
+}
+.heading {
+    margin-right: auto;
+    display: inline-block;
+    padding-right: 38px;
+}
+
+.button-box {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.heading  h1 {
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: var(--white);
+}
+
+.heading span {
+    font-weight: 400;
+    display: block;
+    font-size: 12px;
+    line-height: 148%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.button-box .btn {
+    min-width: 88px;
+    font-family: 'Manrope';
+    border: solid 1px var(--tranparent);
+    border-radius: 7px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    padding: 11px 16px;
+    margin-left: 12px;
+    font-family: 'Manrope';
+}
+
+.btn:hover, .btn.active {
+    background: var(--active);
+    color: var(--grey);
+}
+
+@media only screen and (max-width: 580px) {
+    .top-bar{
+        display: block;
+    }
+    .button-box {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+   
+    .button-box {
+        display: inline-block;
+    }
+
+    .heading h1{
+        font-size: 16px;
+    }
+    .button-box .btn {
+        min-width: 60px;
+        font-size: 12px;
+        margin: 0px 6px;
+    }
+}

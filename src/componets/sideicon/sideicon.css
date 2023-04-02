@@ -1,0 +1,48 @@
+@import url(../../App.css);
+
+.side-box {   
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.flow-box ul {
+    margin: 0;
+    padding: 0px;
+}
+
+.side-box li {
+    background: #265867;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    margin: 6px 0px;
+    padding: 10px;
+    max-width: 36px;
+    max-height: 20px;
+}
+
+.side-box li a {
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+} 
+
+.side-box li:last-child {
+    max-height: inherit;
+    font-size: 28px;
+    padding: 1px 0px;
+    color: #ffffff;
+    min-width: 40px;
+}
+
+.side-box span.icon {
+    display: block;
+}
+
+.side-box span.minus {
+    border-top: solid 1px var(--tranparent);
+    margin-top: 6px;
+    padding-top: 1px;
+    width: 36px;
+}
